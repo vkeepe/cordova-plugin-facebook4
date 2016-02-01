@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-facebook4",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "Cordova Facebook SDK 4 Plugin",
   "cordova": {
     "id": "cordova-plugin-facebook4",
@@ -13,11 +13,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jeduan/cordova-plugin-facebook4"
-  },
-  "dependencies": {
-    "chalk": "^1.1.1",
-    "xcode": "^0.8.2",
-    "xml-parser": "^1.2.1"
   },
   "keywords": [
     "cordova",

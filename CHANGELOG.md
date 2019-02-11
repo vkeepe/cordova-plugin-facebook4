@@ -1,3 +1,66 @@
+<a name="4.2.1"></a>
+# [4.2.1](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v4.2.1)
+
+## Fix
+
+* **iOS**: fix iOS crash when `enableHybridAppEvents` has already been enabled ([#745](https://github.com/jeduan/cordova-plugin-facebook4/pull/746)) 
+
+### Kudos
+Thx [Regev Brody](https://github.com/regevbr) for the PR 👍
+
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v4.2.0)
+
+## Features
+
+* **iOS:** Update Facebook iOS SDK v4.40.0 ([#743](https://github.com/jeduan/cordova-plugin-facebook4/issues/743), [#740](https://github.com/jeduan/cordova-plugin-facebook4/issues/740) | [Facebook iOS SDK changelog](https://developers.facebook.com/docs/ios/change-log-4x) | Released: January 22 2019)
+* **Android:** Set per default usage of Facebook Android SDK v4.40.0 ([#743](https://github.com/jeduan/cordova-plugin-facebook4/issues/743), [#740](https://github.com/jeduan/cordova-plugin-facebook4/issues/740) | [Facebook Android SDK changelog](https://developers.facebook.com/docs/android/change-log-4x) | Released: January 22 2019)
+
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v4.1.0)
+
+## Features
+
+* **Facebook:** Allow hybrid apps to send AppEvents from the pixel ([#678](https://github.com/jeduan/cordova-plugin-facebook4/issues/678))
+
+### Kudos
+
+Thx [Mehmet Sencer Karadayi](https://github.com/msencer) for the PR 👍
+
+<a name="4.0.0"></a>
+# [4.0.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v4.0.0)
+
+## Features
+
+* **Android:** Support for cordova-android >= v7 without any workaround ([#716](https://github.com/jeduan/cordova-plugin-facebook4/pull/716), [#599](https://github.com/jeduan/cordova-plugin-facebook4/issues/599))
+
+## Breaking change
+
+If you already have the workaround in the `config.xml` of your application, you have to **remove** it respectively you **need** to **remove** the following piece of code of your `config.xml`:
+
+```
+<config-file parent="/resources" target="./res/values/strings.xml">		
+    <string name="fb_app_id">123456789</string>		
+    <string name="fb_app_name">myApplication</string>		
+</config-file>
+```
+
+### Side notes
+
+Also note that this improvements is backwards compatible, if you use cordova-android < v7 you should still be able to use the plugin.
+
+### Kudos
+
+Thank you [Adrian Pascu](https://github.com/adipascu) for the PR and support 👍
+
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v3.2.0)
+
+## Features
+
+* **iOS:** Update Facebook iOS SDK v4.38.1 ([#725](https://github.com/jeduan/cordova-plugin-facebook4/issues/725) | [Facebook iOS SDK changelog](https://developers.facebook.com/docs/ios/change-log-4x) | Released: 1st November 2018)
+* **Android:** Set per default usage of Facebook Android SDK v4.38.1 ([#725](https://github.com/jeduan/cordova-plugin-facebook4/issues/725) | [Facebook Android SDK changelog](https://developers.facebook.com/docs/android/change-log-4x) | Released: 1st November 2018)
+
 <a name="3.1.0"></a>
 # [3.1.0](https://github.com/jeduan/cordova-plugin-facebook4/releases/tag/v3.1.0)
 
@@ -13,7 +76,7 @@
 
 * **Android:** Update Facebook Android SDK reference to v4.36.0 (drop greedy v4.+ reference) ([#708](https://github.com/jeduan/cordova-plugin-facebook4/issues/708))
 
-### Dislaimer
+### Disclaimer
 
 This release does not contains that much but we bumped up it to a major release because as of now, each release will always be published with a synchronized Facebook SDK version for iOS and for Android 
 
